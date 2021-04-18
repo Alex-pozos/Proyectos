@@ -19,7 +19,7 @@
 <br>
 <br>
 
-- Adjunto link del archivo original de las [RFC en .ts](https://github.com/Alex-pozos/Tareas/tree/main/Proyecto_RFC/Docs/rfc.ts) y [RFC en .js](https://github.com/Alex-pozos/Tareas/tree/main/Proyecto_RFC/Docs/rfc.js)
+- Adjunto link del archivo original de las [RFC en .ts](https://github.com/Alex-pozos/Proyectos/tree/main/Proyecto_RFC/Docs/rfc.ts) y [RFC en .js](https://github.com/Alex-pozos/Proyectos/tree/main/Proyecto_RFC/Docs/rfc.js)
 
 #### En primera parte tenemos el documento con todas las indicaciones para la creación de nuestro RFC. 
 <img src="img/formato.png">
