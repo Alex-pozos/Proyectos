@@ -1,7 +1,7 @@
 //Primero creamos las variables ya inicializadas que ocuparemos para echar a andar nuestro programa, para que sea mas como todas seran de tipo String
 let nombre:String = "Maria Ofelia";
 let ap_paterno:String = "Peredo";
-let ap_materno:String = "Dominguez";
+let ap_materno:String = "";
 let fecha:String = "15-03-1956";
 let rfc:String = "";
 
@@ -72,10 +72,13 @@ for (let index = 0; index < no_valido.length; index++) {
         ap_paterno.replace(" ","");
         ap_materno.replace(" ","");
     }    
-    
+}
+//Se agrega una condicional para saber si esta escrito algo en el apellido materno de lo contrario Se pondra una X
+if (ap_materno.trim() == "") {
+    ap_materno = "X";
 }
 //Aqui mande a imprimir por medio de un consol por que no sabia como me regresaria la fecha 
-console.log(fecha.split("-"));
+console.log(fecha.split("-")+"    "+ap_materno);
 /*Nuevamente por medio de la funcion split cortamos la cadena para obtener lo que nececitamos*/
 let fecha_x_partes:String[]= fecha.split("-");
 /*Aqui creamos nuevas variables donde asignaremos dia, mes y año que son los datos que nos interesan*/
