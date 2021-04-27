@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="app.js"></script>
+    <title>Calcular Sueldo</title>
+</head>
+<body style="background-color: black;">   
+    <div class="row justify-content-between ml-4 mr-4" style="margin-top: 20px">
+                <div class="jumbotron lead" style="width: 40rem;">
+                        <h2 class="display-4" style="text-align: center;">Calculo de sueldo</h2>
+                        <div class="card">
+                            <h3 style="text-align: center;">Datos</h3>
+                                <hr>
+                            <center>
+                            <img src="user0.png" style="width: 10rem;height: 10rem;">
+                            </center>
+                            <div class="card-body">
+                                
+                            <div class="row">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color: dodgerblue;color:white;">Nombre</span>
+                                    <input type="text" class="form-control" id="nombre" aria-describedby="basic-addon3">
+                                </div>         
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color: dodgerblue;color:white;">Sueldo por hora</span>
+                                    <input type="text" class="form-control" id="sueldo_x_hora" aria-describedby="basic-addon3">
+                                </div>                                          
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color: dodgerblue;color:white;">Cantidad de horas trabajadas</span>
+                                    <input type="text" class="form-control" id="cantidad_h_trabajadas" aria-describedby="basic-addon3">
+                                </div>         
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color:dodgerblue;color:white;">Cantidad de horas extras</span>
+                                    <input type="text" class="form-control" id="cantidad_h_extras" aria-describedby="basic-addon3">
+                                </div>         
+                            </div>
+                                <button class="btn btn-success" onclick="calcular()">Calcular</button>
+                                <button class="btn btn-warning" style="float: right;" onclick="limpiar()">Limpiar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="jumbotron" style="width: 40rem;">
+                        <h2 class="display-4" style="text-align: center;">Resultado</h2>
+                        <div class="card">   
+                            <div class="input-group mb-3">
+                                <button class="btn btn-dark btn-block">Nombre del trabajdor</button>
+                                <input type="text" class="form-control mt-2" id="nombre2" aria-describedby="basic-addon4" style="text-align: center;color: darkcyan;" readonly>     
+                            </div>   
+                            <hr>     
+                            <div class="card-body lead">
+                            <div class="row">  
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color:darkcyan;color:white;">Sueldo</span>
+                                    <input type="text" class="form-control" id="sueldo_base" aria-describedby="basic-addon3" style="color: darkcyan;" readonly>
+                                </div>         
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color:darkcyan;color:white;">impuesto</span>
+                                    <input type="text" class="form-control" id="impuesto" aria-describedby="basic-addon3" style="color: darkcyan;" readonly>
+                                </div>                                          
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color:darkcyan;color:white;">Sueldo neto</span>
+                                    <input type="text" class="form-control" id="sueldo_neto" aria-describedby="basic-addon3" style="color: darkcyan;" readonly>
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
