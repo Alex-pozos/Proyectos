@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="app.js"></script>
+    <title>Examen Unidad 2</title>
+</head>
+<body style="background-color: black;">   
+    <div class="container">
+        <div class="row justify-content-between" style="margin-top: 20px">
+            <div class="jumbotron">
+                <p><h1 style="text-align: center;">Bono adicional<img src="icon.png" style="width: 130px; height: 130px;"></h1></p>
+                <div class="card">
+                    <div class="card-body">                        
+                        <div class="row">
+                            <div class="input-group card-header mb-3">
+                                <h3 class="lead" style="text-align: center;">Datos del empleado</h3>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color: dodgerblue;color:white;">Sueldo</span>
+                                    <input type="text" class="form-control mr-3" id="sueldo" aria-describedby="basic-addon3">
+                                    <span class="input-group-text" id="basic-addon3" style="background-color: dodgerblue;color:white;">Edad</span>
+                                    <input type="text" class="form-control" id="edad" aria-describedby="basic-addon3">
+                                </div>      
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text " id="basic-addon3" style="background-color: dodgerblue;color:white;">Sexo</span>
+                                    <select class="form-control lead" name="select_sex" id="select_sex">
+                                        <option value="0">Selecionar</option>
+                                        <option value="femenino">Femenino</option>
+                                        <option value="masculino">Masculino</option>
+                                      </select>
+                                      <span class="input-group-text ml-4" id="basic-addon3" style="background-color: dodgerblue;color:white;">Nacionalidad</span>
+                                      <select class="form-control lead" name="nacionalidad" id="nacionalidad">
+                                          <option value="nacional">Nacional</option>
+                                          <option value="extranjero">Extranjero</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="card col mr-1">
+                                <h3 class="lead">Cursos</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="php" id="php">
+                                    <label class="form-check-label" for="php">
+                                      PHP
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="asp" id="asp">
+                                    <label class="form-check-label" for="asp">
+                                      ASP.net
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="vb" id="vb">
+                                    <label class="form-check-label" for="vb">
+                                      VB.net
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="java" id="java">
+                                    <label class="form-check-label" for="java">
+                                      Java
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="oracle" id="oracle">
+                                    <label class="form-check-label" for="oracle">
+                                      Oracle
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="bd" id="bd">
+                                    <label class="form-check-label" for="bd">Introduccion a BD
+                                      Introduccion a BD
+                                    </label>
+                                </div>
+                                  
+                            </div>
+                            <div class="card col ml-1">                                
+                                <h3 class="lead">Antigüedad</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="1_5">
+                                    <label class="form-check-label" for="1_5">
+                                      1 a 5 años
+                                    </label>
+                                </div>
+                                <div class="form-check">                                    
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="6_10">
+                                    <label class="form-check-label" for="6_10">
+                                      6 a 10 años
+                                    </label>
+                                </div>
+                                <div class="form-check">                                    
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="mas_10">
+                                    <label class="form-check-label" for="mas_10">
+                                      Más de 10 años
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row card-footer mt-3">
+                            <div class="col mt-3">
+                                <button class="btn btn-outline-success col-4" style="float: right;" onclick="calcular()">Calcular</button>
+                            </div>     
+                            <div class="col input-group mt-3">
+                                <span class="input-group-text" id="basic-addon3" style="background-color: dodgerblue;color:white;">Bono</span>
+                                    <input type="text" class="form-control" id="bono" aria-describedby="basic-addon3" readonly>
+                            </div>     
+                        </div>
+                        <div class="row card-footer mt-3">
+                            <div class="col mt-3">
+                                <button class="btn btn-outline-warning col-4" style="float: right;" onclick="nuevoCalculo()">Nuevo Calculo</button>
+                            </div>     
+                            <div class="col mt-3">
+                                <a class="btn btn-outline-danger col-4" style="float: right;" href="https://www.google.com">Salir</a>
+                            </div>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
