@@ -9,4 +9,4 @@
 ### Examen Unidad 2
 - <a href="https://github.com/Alex-pozos/Proyectos/tree/main/ExamenU2" Style="color:purple">Examen Unidad 2 con ts y js</a>
 ### Practica 1 con angular
-- <a href="https://github.com/Alex-pozos/Proyectos/tree/main/P1Angular/P1_Angular_byAlex.pdf" Style="color:purple">Practica 1 con angular</a>
+- <a href="https://github.com/Alex-pozos/Proyectos/blob/main/P1_Angular/P1Angular_byAlex.pdf" Style="color:purple">Practica 1 con angular</a>
