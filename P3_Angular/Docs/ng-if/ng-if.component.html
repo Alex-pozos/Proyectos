@@ -1,0 +1,38 @@
+<div class="fondo">
+    <div>
+        <h2 class="font" style="font-size:  22px;">{{title1}}</h2>
+        <!-- negacion de una variable "if not" -->
+        <div *ngIf="!isNewUser" class="font" style="font-size:  17px;">
+            <p class="danger">Por favor logueate, amigo.</p>
+        </div>
+        <!-- operador logico && -->
+        <div *ngIf="isLogin && !isNewUser" class="font" style="font-size:  17px;">
+            <p class="warning">Bienevenido nuevamente, amigo.</p>
+        </div>
+        <!-- operador logico or || -->
+        <div *ngIf="isLogin || isNewUser" class="font" style="font-size:  17px;">
+            <p class="success">Bienvenido :D</p>
+        </div>
+    </div>
+    <h2 class="font" style="font-size:  22px;">{{title2}}</h2>
+    <div *ngIf="preguntasObj[0].si > 100" class="font" style="font-size:  17px;">
+        ¿Te gustaria aprender angular?
+        <br>
+        Los usuarios son mas de 1000
+        <br>
+        <span class="success">Si: {{preguntasObj[0].si}}</span>
+    </div>
+    <div class="font" style="font-size:  17px;" style="margin-bottom: 10px;">
+        <h2 class="font" style="font-size:  22px;">{{title3}}</h2>
+        ¿Estás aprendiendo Angular?
+        <br>
+        Los usuarios son mas de 1000
+        <br>
+        <ng-container *ngIf="preguntasObj[1].si > 1000; else falso ">
+            <span class="success">Si, son: {{preguntasObj[1].si}}</span>
+        </ng-container>
+        <ng-template #falso>
+            <span class="danger">Falso, son: {{preguntasObj[1].si}}</span>
+        </ng-template>
+    </div>
+</div>

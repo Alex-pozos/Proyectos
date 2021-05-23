@@ -1,0 +1,37 @@
+<div class="fondo">
+    <div>
+        <h2 class="font" style="font-size:  22px;">{{title1}}</h2>
+        <ng-container *ngIf="check; else falso">
+            <span class="success font" style="font-size:  17px;">Condicion valida</span>
+        </ng-container>
+        <ng-template #falso>
+            <span class="danger font" style="font-size:  17px;">Condicion invalida</span>
+        </ng-template>
+    </div>
+    <div>
+        <h2 class="font" style="font-size:  22px;">{{title2}}</h2>
+        <button (click)="calificacion = calificacion + 1">+</button>
+        <span style="margin: 5px; font-size: 21px;">{{calificacion}}</span>
+        <button (click)="calificacion = calificacion - 1">-</button>
+        <br>
+        <ng-container *ngIf="calificacion > 5; else reprobado">
+            <span class="success font" style="font-size:  17px;">Has aprobado</span>
+        </ng-container>
+        <ng-template #reprobado>
+            <span class="danger font" style="font-size:  17px;">Has resprobado</span>
+        </ng-template>
+    </div>
+    <div>
+        <h2 class="font" style="font-size:  22px;">{{title3}}</h2>
+        <button (click)="calificacion2 = calificacion2 + 1">+</button>
+        <span style="margin: 5px; font-size: 21px;">{{calificacion2}}</span>
+        <button (click)="calificacion2 = calificacion2 - 1">-</button>
+        <br>
+        <ng-container *ngIf="calificacion2 >= 6 && materia == 'Mean stack'; else reprobado2">
+            <span class="success font" style="font-size:  17px;">Has aprobado <br>Materia: {{materia}}</span>
+        </ng-container>
+        <ng-template #reprobado2>
+            <span class="danger font" style="font-size:  17px;">Has reprobado <br>Materia:{{materia2}}.</span>
+        </ng-template>
+    </div>
+</div>

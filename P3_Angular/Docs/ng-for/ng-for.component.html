@@ -1,0 +1,30 @@
+<div class="fondo">
+    <div>
+        <h2 class="font" style="font-size:  22px;">{{title1}}</h2>
+        <table>
+            <tr *ngFor = "let pregunta of preguntas" class="font" style="font-size:  17px;">
+                <td>{{pregunta}}</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2 class="font" style="font-size:  20px;">{{title2}}</h2>
+        <table>
+            <tr *ngFor="let objPregunta of preguntasObj" class="font" style="font-size:  17px;">
+                   <td> {{objPregunta.pregunta}}
+                    <br>
+                    <span>Si: {{objPregunta.si}}</span> / 
+                    <span>No: {{objPregunta.no}}</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-bottom: 10px;">
+        <h2 class="font" style="font-size:  20px;">{{title3}}</h2>
+        <table>
+            <tr *ngFor="let pregunta of preguntas;let impar = odd;let par = even;" [ngClass]="{naranja:par,verde:impar}" class="font" style="font-size:  17px;">
+                <td>{{pregunta}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
