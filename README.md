@@ -12,3 +12,5 @@
 - <a href="https://github.com/Alex-pozos/Proyectos/blob/main/P1_Angular" Style="color:purple">Practica1 con angular</a>
 ### Practica 2 con angular
 - <a href="https://github.com/Alex-pozos/Proyectos/blob/main/P2_Angular" Style="color:purple">Practica2 con angular</a>
+### Practica 3 con angular
+- <a href="https://github.com/Alex-pozos/Proyectos/blob/main/P3_Angular" Style="color:purple">Practica3 con angular</a>
