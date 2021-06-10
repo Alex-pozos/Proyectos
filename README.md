@@ -13,3 +13,7 @@
 ### Unidad 4
 - <a href="https://github.com/Alex-pozos/Proyectos/tree/main/P1_U4_Angular" Style="color:purple">Practica 1 Unidad 4 con angular</a>
 - <a href="https://github.com/Alex-pozos/Proyectos/blob/main/P2_U4_Angular" Style="color:purple">Practica 2 unidad 4 con angular</a>
+
+## Programacion Logica y Funcional
+### Examen Unidad 3 
+- <a href="https://github.com/Alex-pozos/Proyectos/tree/main/AdministradorJava" style="color:purple">Administrador Java</a>
