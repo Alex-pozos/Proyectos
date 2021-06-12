@@ -1,0 +1,13 @@
+<div class="container mt-4">
+  <div class="row mt-4">
+    <table class="table table-striped" border="1">
+      <tbody>
+        <tr *ngFor="let articulo of articulos">
+          <td>{{articulo.codigo}}</td>
+          <td>{{articulo.descripcion}}</td>
+          <td>{{articulo.precio}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

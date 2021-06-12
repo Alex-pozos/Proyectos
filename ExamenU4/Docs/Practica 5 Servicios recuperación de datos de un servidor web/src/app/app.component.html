@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <div class="row mt-4">
+    <div class="col mt-4">
+      <div *ngIf="articulos!=null; else espera">
+        <table class="table table-striped" border="1">
+          <tr>
+            <th>Codigo</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+          </tr>
+          <tbody>
+            <tr *ngFor="let art of articulos">
+              <td>{{art.codigo}}</td>
+              <td>{{art.descripcion}}</td>
+              <td>{{art.precio}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <div class="row mt-4">
+    <div class="col mt-4 lead">
+      <ng-template #espera>Esperando datos...</ng-template>
+
+    </div>
+  </div>
+</div>
