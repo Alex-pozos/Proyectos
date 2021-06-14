@@ -18,5 +18,5 @@
 ## Programacion Logica y Funcional
 ### Examen Unidad 3 
 - <a href="https://github.com/Alex-pozos/Proyectos/tree/main/AdministradorJava" style="color:purple">Administrador Java</a>
-### Examen Unidad 3
+### Examen Unidad 3 PHP Y JS
 - <a href="https://github.com/Alex-pozos/Proyectos/tree/main/GestorArchivos" Style="color:purple">Gestor de Archivos con php y js</a>
