@@ -1,0 +1,46 @@
+<div class="container mt-3 mb-3">
+  <div class="row mt-3 mb-3">
+    <div class="col">
+      <div>
+        <h1>Administración de artículos</h1>
+        <table class="table table-hover" border="1" *ngIf="hayRegistros(); else sinarticulos">
+          <tr>
+            <th>Codigo</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Borrar</th>
+            <th>Seleccionar</th>
+          </tr>
+          <tr *ngFor="let art of articulos">
+            <td>{{art.codigo}}</td>
+            <td>{{art.descripcion}}</td>
+            <td>{{art.precio}}</td>
+            <td><button class="btn btn-outline-danger" (click)="baja(art.codigo)">Borrar</button></td>
+            <td><button class="btn btn-outline-primary" (click)="seleccionar(art.codigo)">Seleccionar</button></td>
+          </tr>
+        </table>
+        <ng-template #sinarticulos>
+          <p>No hay articulos.</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="row" style="width: 20rem;">
+    <div class="col mb-3">
+      <h2 class="col  lead form-label">Articulos</h2>
+      <label class="form-label">Descripcion</label>
+      <input type="text" class="form-control" [(ngModel)]="art.descripcion" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Precio</label>
+      <input type="number" class="form-control" [(ngModel)]="art.precio" />
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-outline-success" (click)="alta()">Agregar</button>
+      <button class="btn btn-outline-warning" style="float:right" (click)="modificacion()">Modificar</button>
+    </div>
+  </div>
+</div>
