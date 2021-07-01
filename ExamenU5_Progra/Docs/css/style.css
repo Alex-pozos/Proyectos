@@ -1,0 +1,43 @@
+H2 {
+    text-align: center;
+    color: deepskyblue;
+}
+.fondo1{
+    /* background-image: url(../img/fondo1.jpg); */
+    background-color: black;
+    opacity: .8;
+    border-radius:10px;
+    height: 3rem;
+}
+.fondo2{
+    background-image: url(../img/fondo4.jpg);
+}
+.fondo3{
+    background: rgb(0, 0, 0);
+    opacity: .8;
+    border-radius:10px;
+    width: 40rem;
+    color:orangered;
+}
+body{
+    background-image: url(../img/fondo2.jpg);
+}
+.mover{
+    float: left;
+}
+.mover2{
+    float: right;
+}
+
+nav{
+    background: rgba(0, 0, 0);
+}
+nav:hover{
+    background: black;
+    opacity: .8;
+}
+.borde{
+    border-radius:10px;
+    background:rgb(0, 0, 0); 
+    opacity: .8;
+}
