@@ -1,0 +1,70 @@
+nav {
+   background: black;
+}
+.imgresponsive{
+   width: 100%;
+   height: fit-content;
+}
+.contenedor{
+   position: relative;
+   display: inline-block;
+   text-align: center;
+}
+.texto-encima{
+   position: absolute;
+   top: 60px;
+   left: 60px;
+   right: 60px;
+}
+.centrado{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.centrar{
+   text-align: center;
+}
+
+.texto{
+   font-family: Comic Sans MS,Arial,Verdana;
+}
+.borde{
+   border-radius: 15px;
+}
+.leyenda {
+   color: white;
+   text-align: center;
+   width: 80%;
+   border: 6px ridge white;
+   margin: 0 auto;
+}
+table {
+   background: none repeat scroll 0 0 #272727;
+   border: 1px solid #f0f0f0;
+   border-collapse: collapse;
+   border-spacing: 0;
+   text-align: left;
+   width: 100%;
+}
+.leyenda th, .leyenda td {
+   border: 1px solid white;
+}
+.ficha th, .leyenda th, .tabla-review th {
+   font-weight: bold;
+}
+table tr th {
+   background: none repeat scroll 0 #751d1d;
+}
+table tr td, table tr th {
+   padding: 0.225rem;
+}
+th, table tr:nth-of-type(2n) td {
+   border-right: 1px solid #fff;
+}
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+}
